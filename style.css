@@ -802,3 +802,20 @@ footer span a:hover{
 .footer-social-links a:hover:before{
     background: transparent;
 }
+
+.web-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
