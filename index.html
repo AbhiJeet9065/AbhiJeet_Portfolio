@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
+    <title>Abhijeet Khan | Frontend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Abhijeet Khan, a passionate frontend developer specializing in React.js, React Native, NextJS, JavaScript, and modern web development. Explore my projects, skills, and resume."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, React Developer, JavaScript Developer, Web Developer Portfolio, Abhijeet Portfolio, HTML CSS JS Projects"
+    />
+    <meta name="author" content="Abhijeet Khan" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Your Name | Frontend Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore my web development portfolio, projects, skills, and resume."
+    />
+    <meta
+      property="og:url"
+      content="https://abhijeet9065.github.io/AbhiJeet_Portfolio/"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Abhijeet | Frontend Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore my web development portfolio, projects, skills, and resume."
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -20,6 +52,7 @@
     />
 
     <link rel="shortcut icon" href="image/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -46,13 +79,21 @@
     </nav>
 
     <!-- home section start -->
-    <section class="home" id="home">
+    <section class="home" id="home" data-aos="fade-in" data-aos-duration="1500">
       <div class="max-width">
         <div class="home-content">
-          <div class="text-1">Hello, my name is</div>
-          <div class="text-2">Abhijeet Khan</div>
-          <div class="text-3">And I'm a <span class="typing"></span></div>
-          <a href="#">Hire me</a>
+          <div class="text-1" data-aos="slide-up" data-aos-duration="1000">
+            Hello, my name is
+          </div>
+          <div class="text-2" data-aos="slide-up" data-aos-duration="1000">
+            Abhijeet Khan
+          </div>
+          <div class="text-3" data-aos="slide-up" data-aos-duration="1000">
+            And I'm a <span class="typing"></span>
+          </div>
+          <a href="#" data-aos="slide-right" data-aos-duration="1500"
+            >Hire me</a
+          >
         </div>
       </div>
     </section>
@@ -60,31 +101,66 @@
     <!-- about section start -->
     <section class="about" id="about">
       <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 class="title" data-aos="slide-up" data-aos-duration="1500">
+          About Me
+        </h2>
         <div class="about-content">
-          <div class="column left">
-            <img src="image/myImage.jpeg" alt="" />
+          <div
+            class="column left"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img src="image/myImage.jpeg" alt="Abhijeet Khan" />
           </div>
-          <div class="column right">
+          <div
+            class="column right"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div class="text">
-              I'm Abhijeet and I'm a <span class="typing-2"></span>
+              I'm Abhijeet, a <span class="typing-2"></span>
             </div>
             <p>
-              Hi, I'm a software professional who works to achieve software that
-              empowers people, not just businesses. I aim to deliver scalable
-              applications and hence, insist over writing the sleek & efficient
-              code while maintaining agreement on code-maintenance.
+              I'm a passionate Frontend Developer with hands-on experience
+              building performant, responsive, and SEO-optimized web
+              applications. At <strong>CircleChess</strong>, I’ve resolved over
+              30+ critical bugs and migrated core pages to Next.js, boosting
+              performance and increasing organic traffic by 40%. I’ve also
+              contributed to performance-driven freelance projects at LaunchBots
+              and built engaging tools like a quiz platform, chat app, and
+              secure travel portal.
+            </p>
+            <p>
+              I hold a B.Tech in Electrical Engineering from Ramgarh Engineering
+              College (2024) and served as the Technical Head of our campus tech
+              club, UDAAN. I'm proficient in React, Next.js, JavaScript, and
+              version control, and hold certifications in MERN Stack, Java
+              Programming, and Adobe Photoshop.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li>
+                  <!-- <li>
                     <i class="bi bi-chevron-right"></i>
                     <strong>Birthday:</strong> <span>28 January 2001</span>
+                  </li> -->
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Frontend Developer at</span>
+                    <strong>CircleChess</strong>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
-                    <span>+91-9065642123</span>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Experience:</strong> <span>1 year</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Skills:</strong>
+                    <span>React Native, NextJS, SEO, WordPress, ReactJS</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong> <span>+91-9065642123</span>
                   </li>
                 </ul>
               </div>
@@ -92,18 +168,19 @@
                 <ul>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Degree:</strong> <span>B.Tech (4th Year)</span>
+                    <strong>Degree:</strong>
+                    <span>B.Tech in Electrical Engineering</span>
                   </li>
                 </ul>
               </div>
             </div>
             <p>
-              I will be graduating with a B.Tech in Electrical Engineering from
-              REC, Ramgarh in 2024. I love to make designs on Illustration and
-              Canva. I am an Open Source enthusiast with contributions to
-              various organizations.
+              I also enjoy working on designs using Illustration and Canva, and
+              actively contribute to open-source projects. I’m always looking to
+              grow and take on challenging opportunities in the field of
+              software development.
             </p>
-            <a href="MyResume.pdf">Download CV</a>
+            <a href="Abhijeet_Khan_2024.pdf">Download CV</a>
           </div>
         </div>
       </div>
@@ -112,9 +189,11 @@
     <!-- services section start -->
     <section class="services" id="services">
       <div class="max-width">
-        <h2 class="title">My services</h2>
+        <h2 class="title" data-aos="slide-up" data-aos-duration="1500">
+          My services
+        </h2>
         <div class="serv-content">
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
               <div class="text">Web Design</div>
@@ -124,14 +203,14 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <i class="fas fa-chart-line"></i>
               <div class="text">App Design</div>
               <p>Don’t only own your business, own your app too</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <i class="fas fa-code"></i>
               <div class="text">Editing</div>
@@ -148,91 +227,136 @@
     <!-- skills section start -->
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 class="title" data-aos="slide-up" data-aos-duration="1500">
+          My skills
+        </h2>
         <div class="skills-content">
-          <div class="column left">
+          <div class="column left" data-aos="slide-up" data-aos-duration="1500">
             <div class="text">My creative skills & experiences.</div>
             <p>
-              I have some common skills like web development, designing,
-              editing, etc,. other from this i also make portrait sketch on my
-              free time and also i have some certificate of this common skills.
-              And for my experience i am currently working in the company 270
-              Circle as a intern.
+              I'm a results-driven Frontend Developer with hands-on experience
+              building responsive, user-friendly, and SEO-optimized web
+              applications. I specialize in modern JavaScript frameworks like
+              ReactJS, Next.js, and React Native. I’ve worked on several
+              impactful projects—migrating web apps, improving load times, and
+              revamping interfaces to boost user engagement and satisfaction.
             </p>
             <br />
             <p>
-              UDAAN | REC Student Portal (2021 - 2024) Co-ordinator, Senior
-              developer and Designer - UDAAN is the only official group of
-              Ramgarh Engineering College created and managed by the students of
-              REC. REC Student Portal (website of Udaan) is the one-stop
-              destination for every college related informations like important
-              notice, question papers, results and much more. It even conducts
-              many events on regular intervals like quizathon, codewar, gusto,
-              etc,.
+              I am currently working at <strong>CircleChess</strong> as a
+              Frontend Developerand also i have interned at
+              <strong>270 Circle</strong> as a Frontend Web Developer,
+              contributing to client websites using HTML, CSS, JavaScript, and
+              WordPress, which significantly improved user engagement.
+              Additionally, I actively contributed to <strong>UDAAN</strong>,
+              the official student-run tech club of Ramgarh Engineering College,
+              where I served as a Senior Developer and Designer from 2021 to
+              2024. As part of the team, I led development for the
+              <strong>REC Student Portal</strong>, a comprehensive platform for
+              academic resources, notices, and event management.
             </p>
             <a href="#">Read more</a>
           </div>
-          <div class="column right">
+          <div
+            class="column right"
+            data-aos="slide-up"
+            data-aos-duration="1500"
+          >
+            <div class="bars">
+              <div class="info">
+                <span>React JS</span>
+                <span>100%</span>
+              </div>
+              <div class="line reactJs"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>NextJS</span>
+                <span>90%</span>
+              </div>
+              <div class="line nextjs"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>React Native</span>
+                <span>90%</span>
+              </div>
+              <div class="line reactNative"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>WordPress</span>
+                <span>90%</span>
+              </div>
+              <div class="line wordpress"></div>
+            </div>
             <div class="bars">
               <div class="info">
                 <span>HTML</span>
-                <span>90%</span>
+                <span>100%</span>
               </div>
               <div class="line html"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>CSS</span>
-                <span>80%</span>
+                <span>100%</span>
               </div>
               <div class="line css"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>JavaScript</span>
-                <span>70%</span>
+                <span>100%</span>
               </div>
               <div class="line js"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>PHP</span>
-                <span>50%</span>
+                <span>80%</span>
               </div>
               <div class="line php"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>MySQL</span>
-                <span>50%</span>
+                <span>80%</span>
               </div>
               <div class="line mysql"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>Flutter</span>
-                <span>50%</span>
+                <span>70%</span>
               </div>
               <div class="line flutter"></div>
             </div>
             <div class="bars">
               <div class="info">
                 <span>Java</span>
-                <span>70%</span>
+                <span>80%</span>
               </div>
               <div class="line java"></div>
             </div>
             <div class="bars">
               <div class="info">
-                <span>React JS</span>
-                <span>70%</span>
+                <span>Python</span>
+                <span>80%</span>
               </div>
-              <div class="line reactJs"></div>
+              <div class="line python"></div>
             </div>
             <div class="bars">
               <div class="info">
-                <span>Python</span>
-                <span>80%</span>
+                <span>Search Engine Optimisation</span>
+                <span>100%</span>
+              </div>
+              <div class="line seo"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Git & Github</span>
+                <span>100%</span>
               </div>
               <div class="line reactJs"></div>
             </div>
@@ -241,14 +365,14 @@
       </div>
     </section>
 
-    <section class="web-section" id="web">
+    <!-- <section class="web-section" id="web">
       <div class="image-container">
         <img src="image/Screenshot.png" alt="google" />
       </div>
-    </section>
+    </section> -->
 
     <section class="page-section bg-dark pt-0 pb-0" id="maps">
-      <div class="max-width">
+      <div class="max-width" data-aos="slide-up" data-aos-duration="1000">
         <div class="container relative">
           <!-- Google Map -->
           <div class="google-map wow fadeInUpShort">
@@ -270,14 +394,16 @@
     <!-- contact section start -->
     <section class="contact" id="contact">
       <div class="max-width">
-        <h2 class="title">Contact me</h2>
+        <h2 class="title" data-aos="slide-up" data-aos-duration="1500">
+          Contact me
+        </h2>
         <div class="contact-content">
-          <div class="column left">
+          <div class="column left" data-aos="slide-up" data-aos-duration="1500">
             <div class="text">Get in Touch</div>
             <p>
               I am constantly looking for new opportunities in industry, I am
               willing to work in the field of web-development, software
-              development and flutter development.
+              development and React Native development.
             </p>
             <div class="icons">
               <div class="row">
@@ -303,7 +429,11 @@
               </div>
             </div>
           </div>
-          <div class="column right">
+          <div
+            class="column right"
+            data-aos="slide-up"
+            data-aos-duration="1500"
+          >
             <div class="text">Message Me</div>
             <form action="mail.php" method="POST">
               <div class="fields">
@@ -360,7 +490,6 @@
     </div>
 
     <!-- footer section start -->
-
     <footer>
       <div class="footer-social-links mb-90 mb-xs-40">
         <a
@@ -410,5 +539,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
